@@ -1,0 +1,8 @@
+.expo-input-container { 
+   font-weight: bold;
+   padding: 0 10px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   box-sizing: border-box;
+}

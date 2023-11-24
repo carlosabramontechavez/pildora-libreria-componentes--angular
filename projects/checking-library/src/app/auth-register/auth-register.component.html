@@ -1,0 +1,39 @@
+<div class="container-register">
+  <form [formGroup]="form">
+    <expo-input
+      placeholder="Nombres completos"
+      width="260px"
+      formControlName="fullName"
+      expoReactiveForm
+      [error]="form.get('fullName')?.invalid && isChangeRegister"
+    ></expo-input>
+    <expo-input
+      placeholder="Correo"
+      width="260px"
+      formControlName="email"
+      expoReactiveForm
+      [error]="form.get('email')?.invalid && isChangeRegister"
+    ></expo-input>
+    <expo-input
+      placeholder="Contraseña"
+      width="260px"
+      formControlName="password"
+      expoReactiveForm
+      [error]="form.get('password')?.invalid && isChangeRegister"
+      type="password"
+    ></expo-input>
+    <div class="container-register__btns">
+      <expo-button
+        label="Registrarse"
+        width="150px"
+        (changeButton)="register()"
+      />
+      <expo-button
+        label="Login"
+        theme="warning"
+        width="100px"
+        (changeButton)="handlerLogin()"
+      />
+    </div>
+  </form>
+</div>

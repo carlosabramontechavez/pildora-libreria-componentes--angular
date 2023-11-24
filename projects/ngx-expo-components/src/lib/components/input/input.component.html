@@ -1,0 +1,13 @@
+<input
+  [type]="type"
+  [value]="value ? value : ''"
+  (input)="onInput($event)"
+  [readOnly]="readOnly"
+  [disabled]="disabled"
+  [placeholder]="placeholder"
+  class="expo-input-container"
+  [ngStyle]="styles"
+  [ngClass]="__class"
+  (focus)="focus = true"
+  (blur)="focus = false"
+/>

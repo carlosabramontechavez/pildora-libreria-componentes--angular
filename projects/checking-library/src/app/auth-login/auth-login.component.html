@@ -1,0 +1,32 @@
+<div class="container-login">
+  <form [formGroup]="form">
+    <expo-input
+      placeholder="Correo"
+      width="200px"
+      formControlName="email"
+      expoReactiveForm
+    ></expo-input>
+    <expo-input
+      placeholder="Contraseña"
+      width="200px"
+      formControlName="password"
+      expoReactiveForm
+      type="password"
+    ></expo-input>
+    <expo-button
+      label="Iniciar sección"
+      width="200px"
+      [disabled]="form.invalid" 
+    />
+  </form>
+</div>
+
+<div class="btn-register-form-login">
+  <expo-button
+    (changeButton)="handlerRegister()"
+    label="Registrarse"
+    theme="info"
+  />
+</div>
+
+<!-- expoReactiveForm -->

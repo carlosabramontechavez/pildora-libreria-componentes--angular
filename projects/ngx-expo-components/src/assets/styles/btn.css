@@ -1,0 +1,36 @@
+.btn-theme-success {
+    background-color: #52c41a;
+    color: #ffffff;
+}
+
+.btn-theme-error {
+    background-color: #f5222d;
+    color: #ffffff;
+}
+
+
+.btn-theme-warning {
+    background-color: #fa8c16;
+    color: #ffffff;
+}
+
+.btn-theme-info {
+    background-color: #2f54eb;
+    color: #ffffff;
+}
+
+.btn-height-s {
+    height: 30px;
+}
+
+.btn-height-m {
+    height: 35px;
+}
+
+.btn-font-size-s {
+    font-size: 14px;
+}
+
+.btn-font-size-m {
+    font-size: 16px;
+}
